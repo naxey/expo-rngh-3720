@@ -1,6 +1,6 @@
-# Minimal Reproducible Example: Swipe Menu Crash
+# expo-rngh-3720
 
-This is a minimal reproducible example demonstrating a crash issue with the swipe menu functionality using `react-native-gesture-handler`.
+This is an example demonstrating a crash issue with the swipe menu functionality using `react-native-gesture-handler`.
 
 ## Setup
 
