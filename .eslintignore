@@ -1,0 +1,14 @@
+node_modules
+__tests__/
+.vscode/
+android/
+coverage/
+ios/
+.expo
+.expo-shared
+docs/
+cli/
+# Supabase Edge Functions / ignore deno
+supabase/functions/**/*.ts
+# file that keeps asking for a newline
+expo-env.d.ts
