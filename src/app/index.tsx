@@ -1,6 +1,4 @@
-/* eslint-disable react-native/no-inline-styles */
-import * as React from 'react';
-import { useMemo } from 'react';
+import React from 'react';
 import {
   FlatList,
   StyleSheet,
@@ -8,82 +6,29 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import ReanimatedSwipeable from 'react-native-gesture-handler/ReanimatedSwipeable';
 
-import {
-  SwipeableRow,
-  SwipeActions,
-  useCloseSwipeOnScroll,
-  useLongPressOpenSwipe,
-  useSingleOpenSwipeable,
-} from '@/components/common/swipeable';
+const DATA = Array.from({ length: 6 }, (_, i) => `Item ${i + 1}`);
 
-type DemoItem = { id: string; title: string };
-
-const DATA: DemoItem[] = Array.from({ length: 6 }).map((_, i) => ({
-  id: `${i + 1}`,
-  title: `Demo item ${i + 1}`,
-}));
-
-function Row({
-  item,
-  onRowOpen,
-}: {
-  item: DemoItem;
-  onRowOpen: (ref: any) => void;
-}) {
-  const swipeableRef = React.useRef<any>(null);
-  const { handleLongPress, suppressPress } = useLongPressOpenSwipe(
-    swipeableRef,
-    onRowOpen
-  );
-
-  const renderRightActions = (
-    _progress: any,
-    _drag: any,
-    methods: { close: () => void }
-  ) => (
-    <SwipeActions
-      methods={methods}
-      onEdit={() => console.log('edit', item.id)}
-      onDelete={() => console.log('delete', item.id)}
-    />
-  );
-
+export default function Screen() {
   return (
-    <SwipeableRow
-      ref={swipeableRef}
-      onRowOpen={onRowOpen}
-      renderRightActions={renderRightActions}
-    >
-      <TouchableOpacity
-        onLongPress={handleLongPress}
-        disabled={suppressPress}
-        style={styles.row}
-        activeOpacity={0.7}
-      >
-        <Text style={styles.rowText}>{item.title}</Text>
-      </TouchableOpacity>
-    </SwipeableRow>
-  );
-}
-
-export default function ShoppingList() {
-  const data = useMemo(() => DATA, []);
-  const { onRowOpen } = useSingleOpenSwipeable();
-  const { onScrollBeginDrag } = useCloseSwipeOnScroll(onRowOpen);
-
-  const renderItem = ({ item }: { item: DemoItem }) => (
-    <Row item={item} onRowOpen={onRowOpen} />
-  );
-
-  return (
-    <View style={{ flex: 1 }}>
+    <View style={styles.container}>
       <FlatList
-        contentContainerStyle={styles.container}
-        data={data}
-        keyExtractor={(i) => i.id}
-        renderItem={renderItem}
-        onScrollBeginDrag={onScrollBeginDrag}
+        data={DATA}
+        keyExtractor={(item) => item}
+        renderItem={({ item }) => (
+          <ReanimatedSwipeable
+            renderRightActions={(_, __, { close }) => (
+              <TouchableOpacity onPress={close} style={styles.actionButton}>
+                <Text style={styles.actionText}>Action</Text>
+              </TouchableOpacity>
+            )}
+          >
+            <View style={styles.itemContainer}>
+              <Text style={styles.itemTitle}>{item}</Text>
+            </View>
+          </ReanimatedSwipeable>
+        )}
       />
     </View>
   );
@@ -91,16 +36,26 @@ export default function ShoppingList() {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 16,
+    flex: 1,
   },
-  row: {
+  actionButton: {
+    width: 160,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#3B82F6',
+  },
+  actionText: {
+    color: '#fff',
+    fontWeight: '600',
+  },
+  itemContainer: {
     backgroundColor: 'white',
     paddingVertical: 16,
     paddingHorizontal: 12,
     borderRadius: 8,
     marginBottom: 8,
   },
-  rowText: {
+  itemTitle: {
     fontSize: 18,
     fontWeight: '600',
   },
