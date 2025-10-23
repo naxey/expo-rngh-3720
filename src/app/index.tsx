@@ -1,35 +1,21 @@
 import React from 'react';
-import {
-  FlatList,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import ReanimatedSwipeable from 'react-native-gesture-handler/ReanimatedSwipeable';
-
-const DATA = Array.from({ length: 6 }, (_, i) => `Item ${i + 1}`);
 
 export default function Screen() {
   return (
     <View style={styles.container}>
-      <FlatList
-        data={DATA}
-        keyExtractor={(item) => item}
-        renderItem={({ item }) => (
-          <ReanimatedSwipeable
-            renderRightActions={(_, __, { close }) => (
-              <TouchableOpacity onPress={close} style={styles.actionButton}>
-                <Text style={styles.actionText}>Action</Text>
-              </TouchableOpacity>
-            )}
-          >
-            <View style={styles.itemContainer}>
-              <Text style={styles.itemTitle}>{item}</Text>
-            </View>
-          </ReanimatedSwipeable>
+      <ReanimatedSwipeable
+        renderRightActions={(_, __, { close }) => (
+          <TouchableOpacity onPress={close} style={styles.actionButton}>
+            <Text style={styles.actionText}>Action</Text>
+          </TouchableOpacity>
         )}
-      />
+      >
+        <View style={styles.itemContainer}>
+          <Text style={styles.itemTitle}>Swipe to crash</Text>
+        </View>
+      </ReanimatedSwipeable>
     </View>
   );
 }
@@ -37,6 +23,8 @@ export default function Screen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    paddingHorizontal: 16,
   },
   actionButton: {
     width: 160,
