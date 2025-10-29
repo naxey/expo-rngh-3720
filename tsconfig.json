@@ -5,9 +5,7 @@
     "moduleResolution": "Bundler",
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     },
     "esModuleInterop": true,
     "checkJs": true,
@@ -19,10 +17,5 @@
     "metro.config.js",
     "tailwind.config.js"
   ],
-  "include": [
-    "app.config.ts",
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "nativewind-env.d.ts"
-  ]
+  "include": ["app.config.ts", "src/**/*.ts", "src/**/*.tsx"]
 }

@@ -32,9 +32,6 @@ importers:
       expo-updates:
         specifier: ~29.0.12
         version: 29.0.12(expo@54.0.12)(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)
-      nativewind:
-        specifier: ^4.1.23
-        version: 4.1.23(react-native-reanimated@4.1.2(@babel/core@7.28.3)(react-native-worklets@0.5.1(@babel/core@7.28.3)(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0))(react-native-safe-area-context@5.6.1(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17)
       react:
         specifier: 19.1.0
         version: 19.1.0
@@ -1755,9 +1752,6 @@ packages:
     resolution: {integrity: sha512-FmeCCAenzH0KH381SPT5FZmiA/TmpndpcaShhfgEN9eCVjnFBqq3l1xrI42y8+PPLI6hypzou4GXw00WHmPBLQ==}
     engines: {node: '>= 0.4'}
 
-  array-timsort@1.0.3:
-    resolution: {integrity: sha512-/+3GRL7dDAGEfM6TseQk/U+mi18TU2Ms9I3UlLdUMhz2hbvGNTKdj9xniwXfUqgYhHxRx0+8UnKkvlNwVU+cWQ==}
-
   array-union@2.1.0:
     resolution: {integrity: sha512-HGyxoOTYUyCM6stUe6EJgnd4EoewAI7zMdfqO+kGjnlZmBDz/cR5pf8r/cR4Wq60sL/p0IkcjUEEPwS3GFrIyw==}
     engines: {node: '>=8'}
@@ -2089,10 +2083,6 @@ packages:
     resolution: {integrity: sha512-QrWXB+ZQSVPmIWIhtEO9H+gwHaMGYiF5ChvoJ+K9ZGHG/sVsa6yiesAD1GC/x46sET00Xlwo1u49RVVVzvcSkw==}
     engines: {node: '>= 10'}
 
-  comment-json@4.2.5:
-    resolution: {integrity: sha512-bKw/r35jR3HGt5PEPm1ljsQQGyCrR8sFGNiN5L+ykDHdpO8Smxkrkla9Yi6NkQyUrb8V54PGhfMs6NrIwtxtdw==}
-    engines: {node: '>= 6'}
-
   compressible@2.0.18:
     resolution: {integrity: sha512-AF3r7P5dWxL8MxyITRMlORQNaOA2IkAFaTr4k7BUumjPtRpGDTZpl0Pb1XCO6JeDCBdp126Cgs9sMxqSjgYyRg==}
     engines: {node: '>= 0.6'}
@@ -2113,9 +2103,6 @@ packages:
 
   core-js-compat@3.45.0:
     resolution: {integrity: sha512-gRoVMBawZg0OnxaVv3zpqLLxaHmsubEGyTnqdpI/CEBvX4JadI1dMSHxagThprYRtSVbuQxvi6iUatdPxohHpA==}
-
-  core-util-is@1.0.3:
-    resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
 
   cosmiconfig@5.2.1:
     resolution: {integrity: sha512-H65gsXo1SKjf8zmrJ67eJk8aIRKV5ff2D4uKZIBZShbhGSpEmsQOPW/SKMKYhSTrqR7ufy6RP69rPogdaPh/kA==}
@@ -2935,10 +2922,6 @@ packages:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
     engines: {node: '>=8'}
 
-  has-own-prop@2.0.0:
-    resolution: {integrity: sha512-Pq0h+hvsVm6dDEa8x82GnLSYHOzNDt7f0ddFa3FqcQlgzEiptPqL+XrOJNavjOzSYiYWIrgeVYYgGlLmnxwilQ==}
-    engines: {node: '>=8'}
-
   has-property-descriptors@1.0.2:
     resolution: {integrity: sha512-55JNKuIW+vq4Ke1BjOTjM2YctQIvCT7GFzHwmfZPGo5wnrgkid0YQtnAleFSqumZm4az3n2BS+erby5ipJdgrg==}
 
@@ -3733,12 +3716,6 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  nativewind@4.1.23:
-    resolution: {integrity: sha512-oLX3suGI6ojQqWxdQezOSM5GmJ4KvMnMtmaSMN9Ggb5j7ysFt4nHxb1xs8RDjZR7BWc+bsetNJU8IQdQMHqRpg==}
-    engines: {node: '>=16'}
-    peerDependencies:
-      tailwindcss: '>3.3.0'
-
   natural-compare-lite@1.4.0:
     resolution: {integrity: sha512-Tj+HTDSJJKaZnfiuw+iaF9skdPpTo2GtEly5JHnWV/hfv2Qj/9RKsGISQtLh2ox3l5EAGw487hnBee0sIJ6v2g==}
 
@@ -4319,10 +4296,6 @@ packages:
   regjsparser@0.9.1:
     resolution: {integrity: sha512-dQUtn90WanSNl+7mQKcXAgZxvUe7Z0SqXlgzv0za4LwiUhyzBC58yQO3liFoUgu8GiJVInAhJjkj1N0EtQ5nkQ==}
     hasBin: true
-
-  repeat-string@1.6.1:
-    resolution: {integrity: sha512-PV0dzCYDNfRi1jCDbJzpW7jNNDRuCOG/jI5ctQcGKt/clZD+YcPS3yIlWuTJMmESC8aevCFmWJy5wjAFgNqN6w==}
-    engines: {node: '>=0.10'}
 
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -7386,8 +7359,6 @@ snapshots:
       is-string: 1.1.1
       math-intrinsics: 1.1.0
 
-  array-timsort@1.0.3: {}
-
   array-union@2.1.0: {}
 
   array.prototype.findlast@1.2.5:
@@ -7822,14 +7793,6 @@ snapshots:
 
   commander@7.2.0: {}
 
-  comment-json@4.2.5:
-    dependencies:
-      array-timsort: 1.0.3
-      core-util-is: 1.0.3
-      esprima: 4.0.1
-      has-own-prop: 2.0.0
-      repeat-string: 1.6.1
-
   compressible@2.0.18:
     dependencies:
       mime-db: 1.54.0
@@ -7862,8 +7825,6 @@ snapshots:
   core-js-compat@3.45.0:
     dependencies:
       browserslist: 4.25.2
-
-  core-util-is@1.0.3: {}
 
   cosmiconfig@5.2.1:
     dependencies:
@@ -8842,8 +8803,6 @@ snapshots:
   has-flag@3.0.0: {}
 
   has-flag@4.0.0: {}
-
-  has-own-prop@2.0.0: {}
 
   has-property-descriptors@1.0.2:
     dependencies:
@@ -9907,20 +9866,6 @@ snapshots:
 
   nanoid@3.3.11: {}
 
-  nativewind@4.1.23(react-native-reanimated@4.1.2(@babel/core@7.28.3)(react-native-worklets@0.5.1(@babel/core@7.28.3)(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0))(react-native-safe-area-context@5.6.1(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17):
-    dependencies:
-      comment-json: 4.2.5
-      debug: 4.4.1
-      react-native-css-interop: 0.1.22(react-native-reanimated@4.1.2(@babel/core@7.28.3)(react-native-worklets@0.5.1(@babel/core@7.28.3)(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0))(react-native-safe-area-context@5.6.1(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)(tailwindcss@3.4.17)
-      tailwindcss: 3.4.17
-    transitivePeerDependencies:
-      - react
-      - react-native
-      - react-native-reanimated
-      - react-native-safe-area-context
-      - react-native-svg
-      - supports-color
-
   natural-compare-lite@1.4.0: {}
 
   natural-compare@1.4.0: {}
@@ -10557,8 +10502,6 @@ snapshots:
   regjsparser@0.9.1:
     dependencies:
       jsesc: 0.5.0
-
-  repeat-string@1.6.1: {}
 
   require-directory@2.1.1: {}
 
