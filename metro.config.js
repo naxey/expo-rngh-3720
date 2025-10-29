@@ -4,6 +4,7 @@
 //   It failed because the native React runtime does not include the Node standard library.
 
 const { getSentryExpoConfig } = require('@sentry/react-native/metro');
+const { withNativeWind } = require('nativewind/metro');
 // Get the base config with Sentry
 const config = getSentryExpoConfig(__dirname);
 
@@ -73,4 +74,4 @@ config.resolver.resolveRequest = (context, moduleName, platform) => {
   );
 };
 
-module.exports = config;
+module.exports = withNativeWind(config, { input: './global.css' });
