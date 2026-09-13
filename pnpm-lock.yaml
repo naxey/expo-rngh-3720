@@ -106,8 +106,8 @@ importers:
         specifier: ^5.2.0
         version: 5.2.0(eslint@8.57.1)
       eslint-plugin-react-hooks-addons:
-        specifier: ^0.5.0
-        version: 0.5.0(eslint@8.57.1)
+        specifier: ^0.6.0
+        version: 0.6.0(eslint@8.57.1)
       eslint-plugin-simple-import-sort:
         specifier: ^10.0.0
         version: 10.0.0(eslint@8.57.1)
@@ -2454,8 +2454,8 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-react-hooks-addons@0.5.0:
-    resolution: {integrity: sha512-m+vccztI9ylmCsjjlvKcOuvKTiODRw/+E9sBPrTP5IUrdhli1Eg4VaDMZ7fCegphQkd7H1Uu93zrPo36RBMuMA==}
+  eslint-plugin-react-hooks-addons@0.6.0:
+    resolution: {integrity: sha512-XMkhXgt2OAL4sinUeTSPZQtP4r2SMF2wmxqZMeoAFPeYxuXAwlUMcAPe1lWoyMuLu4nw5c8RQVL0ak5h62slHg==}
     peerDependencies:
       eslint: '>=3.0.0'
 
@@ -8259,7 +8259,7 @@ snapshots:
     optionalDependencies:
       eslint-config-prettier: 8.10.2(eslint@8.57.1)
 
-  eslint-plugin-react-hooks-addons@0.5.0(eslint@8.57.1):
+  eslint-plugin-react-hooks-addons@0.6.0(eslint@8.57.1):
     dependencies:
       eslint: 8.57.1
 
