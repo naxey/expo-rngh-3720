@@ -44,7 +44,7 @@
     "@babel/core": "^7.27.1",
     "@expo/config": "~12.0.8",
     "@react-native-community/eslint-config": "^3.2.0",
-    "@testing-library/react-native": "14.0.0-alpha.1",
+    "@testing-library/react-native": "14.0.1",
     "@types/jest": "^29.5.14",
     "@types/react": "~19.1.12",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
