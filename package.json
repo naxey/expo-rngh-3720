@@ -67,7 +67,7 @@
     "type": "git",
     "url": "git+https://github.com/naxey/expo-rngh-3720.git"
   },
-  "packageManager": "pnpm@10.14.0",
+  "packageManager": "pnpm@10.16.0",
   "pnpm": {
     "onlyBuiltDependencies": [
       "fsevents",
