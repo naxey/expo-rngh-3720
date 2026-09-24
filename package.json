@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@expo/metro-runtime": "^6.1.2",
-    "@sentry/react-native": "~7.2.0",
+    "@sentry/react-native": "~7.13.0",
     "expo": "~54.0.12",
     "expo-constants": "~18.0.9",
     "expo-dev-client": "~6.0.13",
