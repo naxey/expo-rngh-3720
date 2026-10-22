@@ -1,6 +1,23 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "local>naxey/renovate-config"
+  ],
+  "packageRules": [
+    {
+      "description": "Minimal reproduction for software-mansion/react-native-gesture-handler#3720: keep the versions that reproduce the crash. The shared preset would otherwise auto-merge non-major bumps into them.",
+      "matchPackageNames": [
+        "expo",
+        "react",
+        "react-dom",
+        "react-native",
+        "react-native-gesture-handler",
+        "react-native-reanimated",
+        "react-native-worklets",
+        "react-native-screens",
+        "react-native-safe-area-context"
+      ],
+      "enabled": false
+    }
   ]
 }
