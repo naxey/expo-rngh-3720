@@ -28,7 +28,7 @@ importers:
         version: 8.0.8(expo@54.0.12)(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)
       expo-router:
         specifier: ~6.0.10
-        version: 6.0.10(5452662d88dd5f77ed87da81a6d3a73d)
+        version: 6.0.10(9ff515f689e2fa0774261fb93c486411)
       expo-updates:
         specifier: ~29.0.12
         version: 29.0.12(expo@54.0.12)(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)
@@ -76,8 +76,8 @@ importers:
         specifier: ^3.2.0
         version: 3.2.0(eslint@8.57.1)(jest@29.7.0(@types/node@24.3.0))(prettier@2.8.8)(typescript@5.9.2)
       '@testing-library/react-native':
-        specifier: 14.0.1
-        version: 14.0.1(jest@29.7.0(@types/node@24.3.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)(test-renderer@1.2.0(@types/react@19.1.12)(react@19.1.0))
+        specifier: 14.1.0
+        version: 14.1.0(jest@29.7.0(@types/node@24.3.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)(test-renderer@1.2.0(@types/react@19.1.12)(react@19.1.0))
       '@types/jest':
         specifier: ^29.5.14
         version: 29.5.14
@@ -1450,8 +1450,8 @@ packages:
   '@sinonjs/fake-timers@10.3.0':
     resolution: {integrity: sha512-V4BG07kuYSUkTCSBHG8G8TNhM+F19jXFWnQtzj+we8DrkpSBCee9Z3Ms8yiGer/dlmhe35/Xdgyo3/0rQKg7YA==}
 
-  '@testing-library/react-native@14.0.1':
-    resolution: {integrity: sha512-2r2e2y8SkUNRWKRXlUGqDYunB+AkbdXUPn49Bs5rpv9oxRb0K3USBVugbPbAKJjfj4w5Ba91NJ8LcQCZyopUZA==}
+  '@testing-library/react-native@14.1.0':
+    resolution: {integrity: sha512-tWOam5U3aUE8XqStdWAN/OuUUdGRzh/vJMg7SfCaqXNKx7orRh04590Jp4JbORctYjORoRYfJSg04I2//wnxYw==}
     engines: {node: ^22.13.0 || >=24}
     peerDependencies:
       jest: '>=29.0.0'
@@ -5933,7 +5933,7 @@ snapshots:
       wrap-ansi: 7.0.0
       ws: 8.18.3
     optionalDependencies:
-      expo-router: 6.0.10(5452662d88dd5f77ed87da81a6d3a73d)
+      expo-router: 6.0.10(9ff515f689e2fa0774261fb93c486411)
       react-native: 0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0)
     transitivePeerDependencies:
       - '@modelcontextprotocol/sdk'
@@ -7030,7 +7030,7 @@ snapshots:
     dependencies:
       '@sinonjs/commons': 3.0.1
 
-  '@testing-library/react-native@14.0.1(jest@29.7.0(@types/node@24.3.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)(test-renderer@1.2.0(@types/react@19.1.12)(react@19.1.0))':
+  '@testing-library/react-native@14.1.0(jest@29.7.0(@types/node@24.3.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)(test-renderer@1.2.0(@types/react@19.1.12)(react@19.1.0))':
     dependencies:
       jest-matcher-utils: 30.5.1
       picocolors: 1.1.1
@@ -8552,7 +8552,7 @@ snapshots:
       react: 19.1.0
       react-native: 0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0)
 
-  expo-router@6.0.10(5452662d88dd5f77ed87da81a6d3a73d):
+  expo-router@6.0.10(9ff515f689e2fa0774261fb93c486411):
     dependencies:
       '@expo/metro-runtime': 6.1.2(expo@54.0.12)(react-dom@19.1.0(react@19.1.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)
       '@expo/schema-utils': 0.1.7
@@ -8585,7 +8585,7 @@ snapshots:
       use-latest-callback: 0.2.4(react@19.1.0)
       vaul: 1.1.2(@types/react@19.1.12)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     optionalDependencies:
-      '@testing-library/react-native': 14.0.1(jest@29.7.0(@types/node@24.3.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)(test-renderer@1.2.0(@types/react@19.1.12)(react@19.1.0))
+      '@testing-library/react-native': 14.1.0(jest@29.7.0(@types/node@24.3.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)(test-renderer@1.2.0(@types/react@19.1.12)(react@19.1.0))
       react-dom: 19.1.0(react@19.1.0)
       react-native-gesture-handler: 2.29.0(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)
       react-native-reanimated: 4.1.2(@babel/core@7.28.3)(react-native-worklets@0.5.1(@babel/core@7.28.3)(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0))(react-native@0.81.4(@babel/core@7.28.3)(@types/react@19.1.12)(react@19.1.0))(react@19.1.0)
